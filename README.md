@@ -37,6 +37,8 @@ Visit https://playwright.dev/docs/intro for more information. ✨
 # Installing Playwright Pytest
 - https://playwright.dev/python/docs/intro
 ```
+    npm init playwright@latest
+
     pip install -U pytest
     pip install pytest-playwright
     playwright install
