@@ -13,19 +13,19 @@ import { defineConfig, devices } from '@playwright/test';
  * @see https://playwright.dev/docs/test-configuration
  */
 
-/*
-const config = {
-  headless: false,
-  viewport: { width: 640, height: 360 },
-  ignoreHTTPSErrors: true,
-  video: 'on-first-retry',
-  testDir: 'test',
-  timeout: 30000,
-  use: 'firefox',
-  reporter: 'list',
-  workers: 4
-};
-*/
+
+//const config = {
+//  headless: false,
+//  viewport: { width: 640, height: 360 },
+//  ignoreHTTPSErrors: true,
+//  video: 'on-first-retry',
+//  testDir: 'test',
+//  timeout: 30000,
+//  use: 'firefox',
+//  reporter: 'list',
+//  workers: 4
+//};
+
 
 export default defineConfig({
   testDir: './e2e',
