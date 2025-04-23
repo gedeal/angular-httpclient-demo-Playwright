@@ -47,15 +47,18 @@ Visit https://playwright.dev/docs/intro for more information. ✨
 # Run codegen UI
 ```
 	playwright codegen  http://localhost:4200/add-issue
+	
 ```
 
 # Run Pytest
 ```
 	pytest --headed
+	
 ```
 
 # Run JavaScript tests
 ```
-	npx playwright test
-
+	npx playwright test --headed
+	npx playwright test example.spec.ts --headed
+	
 ```
