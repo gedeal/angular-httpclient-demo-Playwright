@@ -14,17 +14,17 @@ import { defineConfig, devices } from '@playwright/test';
  */
 
 
-//const config = {
-//  headless: false,
-//  viewport: { width: 640, height: 360 },
-//  ignoreHTTPSErrors: true,
-//  video: 'on-first-retry',
-//  testDir: 'test',
-//  timeout: 30000,
-//  use: 'firefox',
-//  reporter: 'list',
-//  workers: 4
-//};
+  const config = {
+    headless: false,
+    viewport: { width: 640, height: 360 },
+    ignoreHTTPSErrors: true,
+    video: 'on-first-retry',
+    testDir: 'test',
+    timeout: 30000,
+    use: 'firefox',
+    reporter: 'list',
+    workers: 4
+  };
 
 
 export default defineConfig({
@@ -52,10 +52,10 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
-  //  {
-  //    name: 'chromium',
-  //    use: { ...devices['Desktop Chrome'] },
-  //  },
+   {
+      name: 'chromium',
+      use: { ...devices['Desktop Chrome'] },
+    },
 
   //  {
   //    name: 'firefox',
@@ -82,10 +82,10 @@ export default defineConfig({
     //   name: 'Microsoft Edge',
     //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
     // },
-     {
-       name: 'Google Chrome',
-       use: { ...devices['Desktop Chrome'], channel: 'chrome' },
-     },
+    // {
+    //   name: 'Google Chrome',
+    //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
+    // },
   ],
 
   /* Run your local dev server before starting the tests */
