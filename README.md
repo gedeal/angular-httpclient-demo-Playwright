@@ -44,6 +44,21 @@ Visit https://playwright.dev/docs/intro for more information. ✨
     playwright install
 ```
 
+
+# Installing Allure Report
+- https://allurereport.org/docs/playwright/
+
+
+```
+  npm install -g allure-commandline
+  npm install --save-dev @playwright/test allure-playwright
+```
+
+- In the playwright.config.ts file, add Allure Playwright as a reporter.
+```
+  reporter: [["line"], ["allure-playwright"]],
+```
+
 # Run codegen UI
 ```
 	playwright codegen  http://localhost:4200/add-issue
